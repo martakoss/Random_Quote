@@ -33,17 +33,24 @@ class QuotesGenetaror extends React.Component {
   }
 
 
+  handleClick = () => {
+      let randomNumber = this.getRandomNumber(0,this.state.response.length);
+      this.setState({
+        author: this.state.response[randomNumber].author,
+        quote: this.state.response[randomNumber].quote
+      })
+    }
+
   render(){
     console.log(this.state.response);
-    let randomNumber = this.getRandomNumber(0,this.state.response.length);
     if(this.state.response){
       return <div>
                 <div className="quote">
-                  <h1>{this.state.response[randomNumber].quote}</h1>
-                  <h2>{this.state.response[randomNumber].author}</h2>
+                  <h1>{this.state.quote}</h1>
+                  <h2>{this.state.author}</h2>
                 </div>
                <div className='button'>
-                 <button>Get a new quote</button>
+                 <button onClick={this.handleClick}>Get a new quote</button>
                </div>
             </div>
     }else {
