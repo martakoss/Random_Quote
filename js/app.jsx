@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
-class QuotesApp extends React.Component {
+class QuotesGenetaror extends React.Component {
   constructor(props) {
        super(props);
        this.state = {
-         response: false
+         response: false,
+         author: '',
+         quote: ''
        };
      }
 
@@ -30,17 +32,20 @@ class QuotesApp extends React.Component {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
+
   render(){
+    console.log(this.state.response);
     let randomNumber = this.getRandomNumber(0,this.state.response.length);
     if(this.state.response){
-      return <div className="mainContainer">
-            <AppTitle/>
-            <div className="quote">
-              <h1>{this.state.response[randomNumber].quote}</h1>
-              <h2>{this.state.response[randomNumber].author}</h2>
+      return <div>
+                <div className="quote">
+                  <h1>{this.state.response[randomNumber].quote}</h1>
+                  <h2>{this.state.response[randomNumber].author}</h2>
+                </div>
+               <div className='button'>
+                 <button>Get a new quote</button>
+               </div>
             </div>
-            <GenerateButton/>
-          </div>
     }else {
       return null
     }
@@ -51,20 +56,23 @@ var AppTitle = React.createClass({
   render: function() {
     return(
       <div className="title">
-        <div>Generate your own quote</div>
+        <div>Random quote generator</div>
       </div>
     )
   }
 })
 
-var GenerateButton = React.createClass({
-  render: function() {
-    return( <div className='button'>
-            <button>Get new quote</button>
-            </div>
-    )
+
+class QuotesApp extends React.Component {
+  render () {
+    return <div className="mainContainer">
+              <AppTitle/>
+              <QuotesGenetaror/>
+           </div>
   }
-})
+}
+
+
 
 class App extends React.Component {
   render () {
