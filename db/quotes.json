@@ -101,11 +101,6 @@
     "cat": "love"
   },
   {
-    "quote": "My grandmother was a teacher, my sister was a teacher, my daughter was a teacher and is now a superintendent in northern California, and my son-in-law is a high school principal. I am surrounded.",
-    "author": "Loni Anderson",
-    "cat": "teacher"
-  },
-  {
     "quote": "I know that I've got big ears and a big forehead and that my hair sticks up. But I'm happy with myself. I'm not necessarily trying to win a beauty pageant here.",
     "author": "Clay Aiken",
     "cat": "beauty"
@@ -129,6 +124,47 @@
     "quote": "I'm hopeful. I know there is a lot of ambition in Washington, obviously. But I hope the ambitious realize that they are more likely to succeed with success as opposed to failure.",
     "author": "George W. Bush",
     "cat": "failure"
+  },
+  {
+    "quote": "A lot of truth is said in jest.",
+    "author": "Eminem",
+    "cat": "truth"
+  },
+  {
+    "quote": "Assassination has never changed the history of the world.",
+    "author": "Benjamin Disraeli",
+    "cat": "history"
+  },
+  
+  {
+    "quote": "Dictators and oppressors should continue to fear me because I will be here for a long time.",
+    "author": "Lech Walesa",
+    "cat": "fear"
+  },
+  {
+    "quote": "He who has great power should use it lightly.",
+    "author": "Lucius Annaeus Seneca",
+    "cat": "great"
+  },
+  {
+    "quote": "It's not fair that women look in the mirror and feel disgust because of what society has made them believe.",
+    "author": "Jessica Simpson",
+    "cat": "society"
+  },
+  {
+    "quote": "We can't forget what happened on May 4th, 1970, when four students gave up their lives because they had the American constitutional right of peaceful protest. They gave up their lives. And to sing that song in that spot on that anniversary was very emotional for us.",
+    "author": "Graham Nash",
+    "cat": "anniversary"
+  },
+  {
+    "quote": "We're sad about some of the losses of members of great seniority and distinction in the Congress, and some very new members, who will no longer be serving with us.",
+    "author": "Nancy Pelosi",
+    "cat": "sad"
+  },
+  {
+    "quote": "My real adversary has no name, no face, no party. It will never be elected, yet it governs - the adversary is the world of finance.",
+    "author": "Francois Hollande",
+    "cat": "finance"
   }	
   ]
 }
