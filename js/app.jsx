@@ -87,7 +87,7 @@ class CategoriesSelector extends React.Component {
   render() {
     let selector = this.state.categories.map((elem,index)=>{
         console.log(elem);
-        return <option key={index} id={elem.quote} value={elem}>
+        return <option key={index} id={elem} value={elem}>
                 {elem}
               </option>
             })
@@ -97,7 +97,7 @@ class CategoriesSelector extends React.Component {
         <form>
           <div className="form">
             <select className="select">{selector}</select>
-            <input className="submit" type="submit" value="Set a category"/>
+            <input className="submit" type="submit" value="Set the chosen category"/>
           </div>
         </form>
       </div>
