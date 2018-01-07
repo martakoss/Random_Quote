@@ -27,12 +27,15 @@ class QuotesGenetaror extends React.Component {
           fetch(url).then(resp => {
                        return resp.json();
                   }).then(data => {
+                    let uniqueCategories = [];
                     let quotesCategories= data.map((quote, index) => {
-                      return quote.cat;
+                      if (uniqueCategories.indexOf(quote.cat) === -1) {
+                          uniqueCategories.push(quote.cat)
+                      }
                     });
                     console.log(quotesCategories);
                     console.log("cytat na 0",data[0]);
-                       return this.setState({response:data, categories: quotesCategories})
+                       return this.setState({response:data, categories: uniqueCategories})
                   }).catch(err => this.setState({respone:"There is no such quote"}))
 }
 
@@ -62,9 +65,10 @@ class QuotesGenetaror extends React.Component {
       return [this.state.response[key].author, this.state.response[key].quote]
     })
     console.log(matchingTheQuote);
+    let randomNumber = this.getRandomNumber(0,matchingTheQuote.length);
     this.setState({
-      author: matchingTheQuote[0][0],
-      quote: matchingTheQuote[0][1]
+      author: matchingTheQuote[randomNumber][0],
+      quote: matchingTheQuote[randomNumber][1]
     });
 }
 

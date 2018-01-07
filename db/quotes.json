@@ -1,13 +1,13 @@
 {
   "quotes": [
     {
-    "quote": "My grandmother was a teacher, my sister was a teacher, my daughter was a teacher and is now a superintendent in northern California, and my son-in-law is a high school principal. I am surrounded.",
-    "author": "Loni Anderson",
-    "cat": "teacher"
+    "quote": "Education is the most powerful weapon which you can use to change the world.",
+    "author": "Nelson Mandela",
+    "cat": "education"
   },
   {
-    "quote": "I know that I've got big ears and a big forehead and that my hair sticks up. But I'm happy with myself. I'm not necessarily trying to win a beauty pageant here.",
-    "author": "Clay Aiken",
+    "quote": "Beauty is power; a smile is its sword.",
+    "author": "John Ray",
     "cat": "beauty"
   },
   {
@@ -21,24 +21,24 @@
     "cat": "faith"
   },
   {
-    "quote": "The definition of a modern approach to war is the acknowledgement of individual lives lost.",
-    "author": "Maya Lin",
+    "quote": "War is sweet to those who haven't experienced it.",
+    "author": "Latin saying",
     "cat": "war"
   },
   {
-    "quote": "I'm hopeful. I know there is a lot of ambition in Washington, obviously. But I hope the ambitious realize that they are more likely to succeed with success as opposed to failure.",
-    "author": "George W. Bush",
-    "cat": "failure"
+    "quote": "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.",
+    "author": "Albert Einstein",
+    "cat": "stupidity"
   },
   {
-    "quote": "Having your own character in a video game is pretty cool.",
-    "author": "Josie Maran",
-    "cat": "cool"
+    "quote": "Some people never go crazy. What truly horrible lives they must lead.",
+    "author": "Charles Bukowski",
+    "cat": "craziness"
   },
   {
-    "quote": "A woman asking 'Am I good? Am I satisfied?' is extremely selfish. The less women fuss about themselves, the less they talk to other women, the more they try to please their husbands, the happier the marriage is going to be.",
-    "author": "Barbara Cartland",
-    "cat": "marriage"
+    "quote": "Be yourself; everyone else is already taken.",
+    "author": "Oscar Wilde",
+    "cat": "honesty"
   },
   {
     "quote": "The gods conceal from men the happiness of death, that they may endure life.",
@@ -86,13 +86,13 @@
     "cat": "alone"
   },
   {
-    "quote": "When you're in love you never really know whether your elation comes from the qualities of the one you love, or if it attributes them to her whether the light which surrounds her like a halo comes from you, from her, or from the meeting of your sparks.",
-    "author": "Natalie Clifford Barney",
+    "quote": "Love is composed of a single soul inhabiting two bodies.",
+    "author": "Aristotle",
     "cat": "love"
   },
   {
-    "quote": "I know that I've got big ears and a big forehead and that my hair sticks up. But I'm happy with myself. I'm not necessarily trying to win a beauty pageant here.",
-    "author": "Clay Aiken",
+    "quote": "Everything has beauty, but not everyone sees it.",
+    "author": "Confucius",
     "cat": "beauty"
   },
   {
@@ -124,7 +124,7 @@
   {
     "quote": "He who has great power should use it lightly.",
     "author": "Lucius Annaeus Seneca",
-    "cat": "great"
+    "cat": "power"
   },
   {
     "quote": "It's not fair that women look in the mirror and feel disgust because of what society has made them believe.",
@@ -132,19 +132,19 @@
     "cat": "society"
   },
   {
-    "quote": "We can't forget what happened on May 4th, 1970, when four students gave up their lives because they had the American constitutional right of peaceful protest. They gave up their lives. And to sing that song in that spot on that anniversary was very emotional for us.",
-    "author": "Graham Nash",
-    "cat": "anniversary"
+    "quote": "It is better to fail in originality than to succeed in imitation.",
+    "author": "Herman Melville",
+    "cat": "success"
   },
   {
-    "quote": "We're sad about some of the losses of members of great seniority and distinction in the Congress, and some very new members, who will no longer be serving with us.",
-    "author": "Nancy Pelosi",
-    "cat": "sad"
+    "quote": "I'm not afraid of death; I just don't want to be there when it happens.",
+    "author": "Woody Allen",
+    "cat": "death"
   },
   {
-    "quote": "My real adversary has no name, no face, no party. It will never be elected, yet it governs - the adversary is the world of finance.",
-    "author": "Francois Hollande",
-    "cat": "finance"
+    "quote": "In politics, stupidity is not a handicap.",
+    "author": "Napoléon Bonaparte",
+    "cat": "politics"
   }	
   ]
 }
