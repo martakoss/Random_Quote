@@ -56,6 +56,18 @@ class QuotesGenetaror extends React.Component {
       })
     }
 
+  handleCategoryChange = (category) => {
+    let matchingTheQuote = Object.keys(this.state.response).filter(key => this.state.response[key].cat === category)
+    .map((key, index) => {
+      return [this.state.response[key].author, this.state.response[key].quote]
+    })
+    console.log(matchingTheQuote);
+    this.setState({
+      author: matchingTheQuote[0][0],
+      quote: matchingTheQuote[0][1]
+    });
+}
+
   render(){
     console.log(this.state.response);
     console.log(this.state.categories);
@@ -68,7 +80,10 @@ class QuotesGenetaror extends React.Component {
                 <div className='button'>
                     <button onClick={this.handleClick}>Get a new quote</button>
                 </div>
-                <CategoriesSelector categories={this.state.categories}/>
+                <CategoriesSelector
+                  categories={this.state.categories}
+                  changeCategory = {this.handleCategoryChange.bind(this)}
+                />
             </div>
     }else {
       return null
@@ -80,8 +95,21 @@ class CategoriesSelector extends React.Component {
   constructor(props) {
        super(props);
        this.state = {
-         categories: this.props.categories
+         categories: this.props.categories,
+         selectedCategory: 'no category selected'
        };
+  }
+
+  onCategoryChange(e){
+    e.preventDefault();
+    this.props.changeCategory(this.state.selectedCategory);
+  }
+
+  onCategorySelection(event){
+    console.log(event.target.value);
+    this.setState({
+      selectedCategory: event.target.value
+    });
   }
 
   render() {
@@ -92,12 +120,17 @@ class CategoriesSelector extends React.Component {
               </option>
             })
     console.log(selector);
+    console.log(this.state.selectedCategory);
     return(
       <div>
         <form>
           <div className="form">
-            <select className="select">{selector}</select>
-            <input className="submit" type="submit" value="Set the chosen category"/>
+            <select className="select" onChange={(event) => this.onCategorySelection(event)}>
+              {selector}
+            </select>
+            <button className="submit" onClick={(e) => this.onCategoryChange(e)}>
+              Set the chosen category
+            </button>
           </div>
         </form>
       </div>
