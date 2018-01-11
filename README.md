@@ -1,3 +1,3 @@
 # Random_Quote
 
-Generates from the local api a quote. One needs to click on the button.
+Generates a random quote from the local api. The user can also choose the category of the quote.  
