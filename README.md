@@ -1,4 +1,4 @@
-# Random_Quote
+# Random Quote Generator
 
 ## Generates a random quote using local REST API. The user can also choose the category of the quote.  
 
